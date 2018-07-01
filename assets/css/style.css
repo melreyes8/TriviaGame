@@ -1,0 +1,57 @@
+body {
+    background-image: url(../images/backgroundImage2.jpg);
+    background-size: cover;
+}
+
+header {
+    font-family: 'Monofett', cursive;
+    font-size: 100px;
+    text-align: center;
+}
+
+#buttonContainer {
+    margin: 0 auto;
+    margin-top: 320px;  
+    height: 0 auto;
+    /* position: absolute; */
+    top: 50%;
+    width: 500px;
+    border: solid darkred;
+    background: linear-gradient(rgb(39, 20, 20), white, rgb(39, 20, 20));     
+}
+
+button {
+    width: inherit;
+    padding: 10px; 
+    font-size: 40px;
+    font-weight: 900;
+    animation: blinker 1s linear infinite; 
+}
+
+    @keyframes blinker {  
+    50% { opacity: 0; }
+  } 
+
+#triviaContainer {
+    background-color: lightgrey;
+    width: 600px;
+    /* height: 550px; */
+    border: solid darkred;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0 auto;
+    height: 0 auto;
+}
+
+#instruction {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    border: solid gray;
+    width: 900px;
+    height: 0 auto;
+    margin: 0 auto;
+    background: white;
+    /* background: rgba(200, 54, 54, 0.5); */
+}
