@@ -7,24 +7,24 @@ header {
     font-family: 'Monofett', cursive;
     font-size: 100px;
     text-align: center;
+    margin: 0 auto; 
 }
 
-#buttonContainer {
+#buttonContainer, #triviaContainer {
     margin: 0 auto;
-    margin-top: 320px;  
     height: 0 auto;
-    /* position: absolute; */
     top: 50%;
     width: 500px;
-    border: solid darkred;
-    background: linear-gradient(rgb(39, 20, 20), white, rgb(39, 20, 20));     
 }
 
 button {
     width: inherit;
+    margin-top: 320px;  
     padding: 10px; 
     font-size: 40px;
     font-weight: 900;
+    border: solid darkred;
+    background: linear-gradient(rgb(39, 20, 20), white, rgb(39, 20, 20));    
     animation: blinker 1s linear infinite; 
 }
 
@@ -34,13 +34,15 @@ button {
 
 #triviaContainer {
     background-color: lightgrey;
-    width: 600px;
-    /* height: 550px; */
+    width: 700px;
+    height: 550px;
     border: solid darkred;
-    padding: 20px;
-    font-size: 20px;
     margin: 0 auto;
     height: 0 auto;
+    z-index: 50;
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    text-align: center;
 }
 
 #instruction {
@@ -49,9 +51,44 @@ button {
     font-size: 30px;
     padding: 5px;
     border: solid gray;
-    width: 900px;
+    width: 800px;
     height: 0 auto;
     margin: 0 auto;
+    margin-bottom: 15px;
     background: white;
-    /* background: rgba(200, 54, 54, 0.5); */
+}
+
+.answer {
+    border: solid gray;
+    background: white;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.answer:hover {
+    background: yellow;
+}
+
+.reset-button {
+    width: inherit;
+    padding: 10px; 
+    font-size: 40px;
+    font-weight: 900;
+    border: solid darkred;
+    background: linear-gradient(rgb(39, 20, 20), white, rgb(39, 20, 20));    
+    animation: blinker 1s linear infinite; 
+}
+
+    @keyframes blinker {  
+    50% { opacity: 0; }
+  }     
+
+img {
+    height: 300px;
+    width: 200px;
+}
+
+#quotes, #correctAnswer {
+    color: blue;
 }
