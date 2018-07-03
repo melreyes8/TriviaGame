@@ -129,7 +129,7 @@ $(document).ready(function(){
     function unansweredLoss() {
         unansweredCounter++;
         loadHTML = "<p class='text-center'>Time Remaining: <span class='timer'>" 
-        + timer + "</span></p>" + "<p class='text-center'>Out of time!</p><p>The correct answer was: " 
+        + timer + "</span><span> seconds</span></p>" + "<p class='text-center'>Out of time!</p><p>The correct answer was: " 
         + correctAnswers[questionCounter] + "</p>" + imageArray[questionCounter]; 
         $("#triviaContainer").html(loadHTML);
         setTimeout(wait, 3000);
@@ -139,7 +139,7 @@ $(document).ready(function(){
     function showWin() {
         correctCounter++;
         loadHTML = "<p class='text-center'>Time Remaining: <span class='timer'>" 
-        + timer + "</span></p>" + "<p class='text-center'>Correct!</p><p>The answer is: " 
+        + timer + "</span><span> seconds</span></p>" + "<p class='text-center'>Correct!</p><p>The answer is: " 
         + correctAnswers[questionCounter] + "</p>" + imageArray[questionCounter];
         $("#triviaContainer").html(loadHTML);
         setTimeout(wait, 3000);  
@@ -149,7 +149,7 @@ $(document).ready(function(){
     function showLoss() {
         wrongCounter++;
         loadHTML = "<p class='text-center'>Time Remaining: <span class='timer'>" 
-        + timer + "</span></p>" + "<p class='text-center'>Wrong!</p><p>The correct answer is: " 
+        + timer + "</span><span> seconds</span></p>" + "<p class='text-center'>Wrong!</p><p>The correct answer is: " 
         + correctAnswers[questionCounter] + "</p>" + imageArray[questionCounter]; 
         $("#triviaContainer").html(loadHTML);
         setTimeout(wait, 3000); 
@@ -184,7 +184,7 @@ $(document).ready(function(){
     // Shows all results on the page and the option to restart the game by clicking on the reset-button/"START OVER?"    
     function finalScreen() {
         loadHTML = "<p class='text-center'>Time Remaining: <span class='timer'>" 
-        + timer + "</span></p>" + "<p class='text-center'>All done! Here's how you did!" 
+        + timer + "</span><span> seconds</span></p>" + "<p class='text-center'>All done! Here's how you did!" 
         + "</p>" + "<p class='summary-correct'>Correct Answers: " 
         + correctCounter + "</p>" + "<p>Wrong Answers: " 
         + wrongCounter + "</p>" + "<p>Unanswered: " 
